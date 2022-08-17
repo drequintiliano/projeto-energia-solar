@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fale Conosco - Infinito Energia Solar</title>
+
+    <link rel="icon" href="./Content/image/logo.png" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="./Content/bootstrap.min.css">    
+    <link href="./Content/Site.css" rel='stylesheet'>
+
+    <script src="./Scripts/jquery-3.3.1.min.js"></script>
+    <script src="./Scripts/modernizr-2.8.3.js"></script>
+    <script src="https://kit.fontawesome.com/61fa5032c9.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('#header').load("_header.html");
+                $('#footer').load("_footer.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- Main -->
+    <div class="bg-cinza">
+        <div class="row alinhado d-flex mx-auto justify-content-around align-items-center py-120">
+    
+            <h1 class="text-center pt-5">Fale Conosco</h1>
+           
+            <div class="row mx-0 pt-5">
+                <div class="col-12 text-center">
+                    <hr />
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Rua Luciano Fernandes Garcia, 95, Vila Carvalho, Sorocaba - SP, 18060-095<br /> <i class="fa fa-envelope" aria-hidden="true"></i> <a class="text-black" href="mailto:contato@einfinito.com.br">contato@einfinito.com.br</a>  <br /> <i class="fa fa-phone" aria-hidden="true"></i> (15) 98809-8515</p>
+    
+                    <hr />
+                </div>
+            </div>
+            
+            <div class="row mx-0 pt-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pb-5">
+                    <!-- Desktop -->
+                    <div class="desktop">
+                      
+    
+                        <!-- Mapa Google -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2663372793436!2d-47.47056508554503!3d-23.48691446473112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f54a9ed7b189%3A0x409b034a2fd0d110!2sR.%20Luciano%20Fernandes%20Garc%C3%ADa%2C%2095%20-%20Vila%20Carvalho%2C%20Sorocaba%20-%20SP%2C%2018060-095!5e0!3m2!1sen!2sbr!4v1595136445829!5m2!1sen!2sbr" width="400" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+    
+                    <!-- Mobile -->
+                    <div class="small-screen px-48">                   
+    
+                        <!-- Mapa Google -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2663372793436!2d-47.47056508554503!3d-23.48691446473112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f54a9ed7b189%3A0x409b034a2fd0d110!2sR.%20Luciano%20Fernandes%20Garc%C3%ADa%2C%2095%20-%20Vila%20Carvalho%2C%20Sorocaba%20-%20SP%2C%2018060-095!5e0!3m2!1sen!2sbr!4v1595136445829!5m2!1sen!2sbr" width="230" height="260" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    
+                    <form class="px-48">
+                        <div class="form-group">
+                            <!-- <label for="nome">Nome:</label> -->
+                            <input type="text" class="form-control" id="nome" required="" name="nome" placeholder="Insira seu nome">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email">E-mail:</label> -->
+                            <input type="email" class="form-control" id="email" required="" name="email" placeholder="Insira seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="telefone">Telefone:</label> -->
+                            <input type="text" class="form-control" id="telefone" required="" name="telefone" placeholder="Telefone para contato">
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto: </label>
+                            <select class="form-control" name="assunto" id="assunto">
+                                <option value="Orçamento">Orçamento</option>
+                                <option value="Financeiro">Financeiro</option>
+                                <option value="Trabalhe Conosco">Trabalhe Conosco</option>
+                                <option value="Fornecedor">Fornecedor</option>
+                                <option value="Outros Assuntos">Outros Assuntos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea type="textarea" class="form-control" id="mensagem" required="" name="mensagem" maxlength="500" rows="4" cols="50"></textarea><br>
+                        </div>
+                        <div class="form-group">
+                            <div class="text-right">
+                                <button class="bg-footer btn btn-energia white box-shadow" style="margin-right: 12px;" id="btn-enviar" type="submit">Enviar</button>
+                            </div>
+                        </div>                   
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,463 @@
+﻿/*
+    Paleta de Cores para referencia
+    #2b4e73 - azul escuro
+
+    #c5d1db - cinza
+
+    #749cbf - azul claro
+
+    #6bb2b5 - verde
+
+    #141616 - preto
+
+*/
+.verde {
+    color: #6bb2b5;
+}
+
+.bg-verde {
+    background-color: #6bb2b5;
+}
+
+.azul {
+    color: #749cbf;
+}
+
+.bg-azul {
+    background-color: #749cbf;
+}
+
+.azul-escuro {
+    color: #2b4e73;
+}
+
+.bg-azul-escuro {
+    background-color: #2b4e73;
+}
+
+.white {
+    color: white;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.cinza {
+    color: #e9ecef;
+}
+
+.bg-cinza {
+    background-color: #e9ecef;
+}
+
+.text-black {
+   color: black !important;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Montserrat', 'Calibri' !important;
+}
+
+.nav-shadow {
+    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.4);
+    /*box-shadow: 0px 0px 32px 0px rgba(253,209,11,0.4);*/
+    transition: background 1s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;    
+}
+
+.ajuste-nav {
+    max-width: 1140px; 
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.alinhado {
+    max-width: 886px !important;   
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.logo {
+    margin-right: 120px;
+}
+
+footer .socias a {
+    display: inline-block;
+    /*width: 30px;*/
+    height: 30px;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50%;   
+    color: white;
+    margin: 0 1rem;    
+}
+
+    footer .socias a:hover {
+        transition: ease all .3s;
+        transform: translate(0, -0.15em);
+    }
+
+.nav-font {
+    color: white !important;
+    font-weight: bold;
+}
+
+.transacao:hover {
+    transition: ease all .2s;
+    transform: translate(0, -0.15em);
+  
+}
+
+.bg-footer {
+    background-color: #2b4e73;
+}
+
+h1 {
+    padding-bottom: 40px;
+    font-weight: bold;
+    color: #2b4e73;
+    text-decoration: overline;
+    font-size: 44px;
+}
+
+
+
+.banner {   
+    width: 100%
+}
+
+.cartao {
+    background-color: white;
+    padding: 3em 3em;
+    border-radius: 6px;
+    box-shadow: 8px 8px 8px 8px rgba(116, 156, 191, 0.3);
+}
+
+.cartaozinho {
+    background-color: white;
+    padding: 2rem 2rem;  
+    border-radius: 6px;
+    box-shadow: 8px 8px 8px 8px rgba(116, 156, 191, 0.3);
+}
+
+strong {
+    color: #2b4e73;
+}
+
+
+.vantagem {
+    padding-bottom: 120px !important;
+}
+
+.vantagem li, .servico li {
+    list-style-type: none;
+}
+
+.vantagem i, .servico i {
+    color: white;
+    background-color: #6bb2b5;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+}
+
+.vantagem strong, .servico strong {
+    color: #6bb2b5;
+    font-weight: bold;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.4);
+}
+
+.box-shadow-8 {
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.8);
+}
+
+.box-logo {
+    box-shadow: 0px 0px 16px 0px rgba(255,255,255,0.8);
+    border-radius: 50%;
+    background-color: #749cbf;
+}
+
+.desktop-sobre {
+    position: relative;
+}
+
+    .desktop-sobre h2 {
+        font-size: 22px !important;
+        margin-bottom: 0;
+    }
+
+
+.titulo-banner1 {    
+    position: absolute;
+    top: 12rem;
+    /*right: 16rem;*/    
+    /*float: left;*/
+    margin: 30px;
+    padding: 2px 4px;
+    animation: position1 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.titulo-banner2 {
+    position: absolute;
+    top: 236px;
+    margin: 30px;
+    padding: 2px 4px;
+    animation: position2 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes position1 {
+    0% {
+        opacity: 0;
+        background: none;
+        left: calc(-100% + 35px);
+        box-shadow: 0px rgba(0,0,0,0);
+    }
+
+    50% {
+        opacity: 0.5;
+        background: none;
+        left: calc(-100% + 70px);
+        box-shadow: 0px rgba(0,0,0,0);
+    }
+
+    100% {
+        opacity: 1;
+        background: white;
+        left: 18rem;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.8);
+    }
+}
+
+
+@keyframes position2 {
+    0% {
+        opacity: 0;
+        background: none;
+        left: calc(-100% + 35px);
+        box-shadow: 0px rgba(0,0,0,0);
+    }
+
+    50% {
+        opacity: 0.5;
+        background: none;
+        left: calc(-100% + 70px);
+        box-shadow: 0px rgba(0,0,0,0);
+    }
+
+    100% {
+        opacity: 1;
+        background: white;
+        left: 42.3rem;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.8);
+    }
+}
+
+.transitionSize {
+    transition: transform 0.4s;
+}
+
+.transitionSize:hover {
+    transform : scale(1.1);
+}
+
+.btn-energia:hover {
+    transition: ease all .2s;
+    transform: translate(0, -0.15em);
+    font-weight: bold;   
+    color: white;
+}
+
+.btn-vantagem:hover {
+    transition: ease all .2s;
+    transform: translate(0, -0.15em);
+    font-weight: bold;
+    color: #6bb2b5;
+}
+
+.colunas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 5px 30px;
+}
+
+.sobre {
+    background-color: white;
+    padding: 3em 3em;
+    border-radius: 6px;
+    box-shadow: 8px 8px 8px 8px rgba(116, 156, 191, 0.3);
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+}
+
+    .sobre::before {      
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.3;
+        background-image: url(image/placas6.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
+
+
+/*.bg-nav {
+    background-color: rgb(116, 156, 191);
+}*/
+
+.bg-nav {
+    background-color: rgba(116, 156, 191, 0.6);
+} 
+
+.opac {
+    opacity: 0.2 !important;
+}
+
+.px-48 {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.px-32 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px ;
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px) {
+    .mobile-sobre {
+        display: block;
+    }
+    /* show it on small screens */
+}
+
+@media screen and (min-width: 771px) {
+    .mobile-sobre {
+        display: none;
+    }
+    /* hide it elsewhere */
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px) {
+    .desktop-sobre {
+        display: none;
+    }
+    /* show it on small screens */
+}
+
+@media screen and (min-width: 771px) {
+    .desktop-sobre {
+        display: grid;
+    }
+    /* hide it elsewhere */
+}
+
+.img-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(5%); /* Adicionar os prefixos dos navegadores */
+}
+
+.contato {
+    width: 820px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px) {
+    .small-screen {
+        display: block;
+    }
+    /* show it on small screens */
+}
+
+
+@media screen and (min-width: 771px) {
+    .small-screen {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px) {
+    .desktop {
+        display: none;
+    }
+    /* show it on small screens */
+}
+
+
+@media screen and (min-width: 771px) {
+    .desktop {
+        display: block;
+    }
+    /* show it on small screens */
+}
+
+.copyright {
+    font-size: 12px !important;
+    font-family: 'Roboto Slab', serif !important;    
+}
+
+    .copyright p {
+        margin-bottom: 0px !important;
+        margin-top: 16px !important;
+    }
+
+.hr-foot {
+    border-color: white !important;
+}
+
+.border-radius-8 {
+    border-radius: 8px;
+}
